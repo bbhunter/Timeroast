@@ -24,7 +24,7 @@ Three scripts are included:
 - `timeroast.ps1`: Powershell port of the same script.
 - `extra-scripts/timecrack.py`: performs a simple, unoptimized, dictionary attack on the results of `timeroast.py` or `timeroast.ps1`. 
 
-Hashcat [will add support for Timeroast hashes](https://github.com/hashcat/hashcat/issues/3629) as hash type 31300. Currently, it's already available in the [beta release](https://hashcat.net/beta/).
+The output of `timeroast.py` can be directly fed to [Hashcat](https://hashcat.net/) in order to crack them. Use hash type 31300 (MS SNTP) and the `--username` flag.
 
 
 Alternative ways to abuse weak 'dollar account' passwords
